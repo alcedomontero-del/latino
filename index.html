@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latino RD Haina</title>
     <script src="este.js"></script>
     <link rel="stylesheet" href="estilos.css">
-
-    
-
+    <style>
+        /* Estilos básicos para que tu video y comentarios se vean ordenados */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 { text-align: center; }
+        video { width: 100%; border-radius: 8px; margin-bottom: 30px; }
+    </style>
 </head>
 <body>
+
     <h1>Latino RD Haina</h1>
-   <video src="videoplayback.mp4" controls width="500" style="display: block; margin-bottom: 30px;"></video>
+    <video src="videoplayback.mp4" controls></video>
 
-    <div id="fb-root"></div>
-
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0&appId=2052311002386528">
+    <!-- AQUÍ EMPIEZA DISQUS -->
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = 'https://alcedomontero-del.github.io/latino/'; 
+            this.page.identifier = 'latino-rd-haina-principal'; 
+        };
+        (function() { 
+            var d = document, s = d.createElement('script');
+            
+            // Aquí ya pusimos tu shortname real (amm-3)
+            s.src = 'https://amm-3.disqus.com/embed.js';
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
     </script>
+    <!-- AQUÍ TERMINA DISQUS -->
 
-  <div class="fb-comments"
-     data-href="https://alcedomontero-del.github.io/latino/"
-     data-width="500"
-     data-numposts="5">
-</div>
-
-
-
-
-    
 </body>
 </html>
